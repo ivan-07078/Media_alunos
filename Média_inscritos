@@ -1,0 +1,54 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner leia = new Scanner(System.in);
+	    
+	    String titulo1;
+	    String titulo2;
+	    String titulo3;
+	    
+	    int alunoInscritos1;
+	     int alunoInscritos2;
+	      int alunoInscritos3;
+	      
+	      
+	      System.out.print("Digite o nome do primeiro curso:");
+	      titulo1 = leia.nextLine();
+	      
+	      System.out.print("Digite o nome do segundo curso:");
+	      titulo2 = leia.nextLine();
+	      
+	      System.out.print("Digite o nome do terceiro curso:");
+	      titulo3 = leia.nextLine();
+	      
+	      
+	      
+	 System.out.print("Digite a quantidade de alunos inscritos no curso de "+ titulo1+":");
+	    alunoInscritos1 = leia.nextInt();
+	     
+	 System.out.print("Digite a quantidade de alunos inscritos no curso de "+ titulo2+":");
+	   alunoInscritos2 = leia.nextInt();
+	 
+     System.out.print("Digite a quantidade de alunos inscritos no curso de "+ titulo3+":");
+	
+	
+	      alunoInscritos3 = leia.nextInt();
+	     
+	     
+	    
+	 
+	     if( alunoInscritos1 > 200){
+	         System.out.print("O curso de "+titulo1+"  passou dos 200 alunos: \n");
+	     } if(alunoInscritos2 > 200){ 
+	         System.out.print("O curso de "+titulo2+"  passou dos 200 alunos: \n");
+	     } if(alunoInscritos3 > 200){
+	         System.out.print("O curso de "+titulo3+"  passou dos 200 alunos: \n");
+	     }
+	 
+	 
+	    double media = (alunoInscritos1+alunoInscritos2+alunoInscritos3)/3;
+	 
+	 System.out.print("\n A média do número de inscritos nos cursos de "+titulo1+", "+titulo2+" e "+titulo3+" é: "+media+"!");
+	}
+}
